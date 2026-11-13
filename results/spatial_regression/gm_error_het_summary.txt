@@ -1,0 +1,22 @@
+REGRESSION RESULTS
+------------------
+
+SUMMARY OF OUTPUT: GM SPATIALLY WEIGHTED LEAST SQUARES (HET)
+------------------------------------------------------------------------------------
+Data set            :     unknown
+Weights matrix      :     unknown
+Dependent Variable  :       LST_C                Number of Observations:        5000
+Mean dependent var  :     44.8384                Number of Variables   :           3
+S.D. dependent var  :      4.0327                Degrees of Freedom    :        4997
+Pseudo R-squared    :      0.0977
+N. of iterations    :           1                Step1c computed       :          No
+
+------------------------------------------------------------------------------------
+            Variable     Coefficient       Std.Error     z-Statistic     Probability
+------------------------------------------------------------------------------------
+            CONSTANT        44.30089         0.31646       139.98973         0.00000
+                NDVI         2.19262         0.90908         2.41192         0.01587
+                NDBI        11.48029         1.37172         8.36924         0.00000
+              lambda         0.88327         0.00935        94.50597         0.00000
+------------------------------------------------------------------------------------
+================================ END OF REPORT =====================================

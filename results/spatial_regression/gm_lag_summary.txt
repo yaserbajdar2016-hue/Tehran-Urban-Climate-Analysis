@@ -1,0 +1,35 @@
+REGRESSION RESULTS
+------------------
+
+SUMMARY OF OUTPUT: SPATIAL TWO STAGE LEAST SQUARES
+------------------------------------------------------------------------------------
+Data set            :     unknown
+Weights matrix      :     unknown
+Dependent Variable  :       LST_C                Number of Observations:        5000
+Mean dependent var  :     44.8384                Number of Variables   :           4
+S.D. dependent var  :      4.0327                Degrees of Freedom    :        4996
+Pseudo R-squared    :      0.7357
+Spatial Pseudo R-squared:  0.1866
+
+White Standard Errors
+------------------------------------------------------------------------------------
+            Variable     Coefficient       Std.Error     z-Statistic     Probability
+------------------------------------------------------------------------------------
+            CONSTANT         7.89509         1.19986         6.57999         0.00000
+                NDVI         3.16575         0.86358         3.66583         0.00025
+                NDBI        12.89620         1.38228         9.32965         0.00000
+             W_LST_C         0.80559         0.02674        30.13123         0.00000
+------------------------------------------------------------------------------------
+Instrumented: W_LST_C
+Instruments: W_NDBI, W_NDVI
+
+DIAGNOSTICS FOR SPATIAL DEPENDENCE
+TEST                              DF         VALUE           PROB
+Anselin-Kelejian Test             1          2.224           0.1359
+
+SPATIAL LAG MODEL IMPACTS
+Impacts computed using the 'simple' method.
+            Variable         Direct        Indirect          Total
+                NDVI         3.1657         13.1184         16.2842
+                NDBI        12.8962         53.4402         66.3364
+================================ END OF REPORT =====================================

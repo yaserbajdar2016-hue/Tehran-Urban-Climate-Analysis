@@ -1,0 +1,27 @@
+TEHRAN URBAN CLIMATE ANALYSIS
+STAGE 12: SPATIAL REGRESSION
+
+Study year: 2024
+Observations: 5000
+Spatial weights: KNN (8)
+Weight transformation: Row-standardized
+Coordinate system: EPSG:32639
+
+MODELS
+1. OLS baseline
+2. Spatial Lag: GM_Lag
+3. Spatial Error: GM_Error_Het
+
+MODEL PERFORMANCE
+       Model    N  R_squared_or_Pseudo_R_squared     RMSE      MAE  Residual_Mean  Residual_SD
+         OLS 5000                       0.097767 3.830089 3.249108   3.313403e-14     3.830472
+      GM_Lag 5000                       0.735685 2.135702 1.684558   3.087285e-12     2.135915
+GM_Error_Het 5000                       0.097678 3.883725 3.285611  -9.861294e-02     3.882861
+
+RESIDUAL MORAN'S I
+       Model  Moran_I  Expected_I  P_Value    Z_Score  Permutations
+         OLS 0.685312     -0.0002    0.001 103.821907           999
+      GM_Lag 0.035368     -0.0002    0.001   5.244669           999
+GM_Error_Het 0.713905     -0.0002    0.001 104.231355           999
+
+Interpretation must consider estimator assumptions, spatial weights specification, and residual diagnostics.
