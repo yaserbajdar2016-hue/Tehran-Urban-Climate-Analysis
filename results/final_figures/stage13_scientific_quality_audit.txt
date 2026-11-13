@@ -1,0 +1,316 @@
+**********************
+Windows PowerShell transcript start
+Start time: 20261112154014
+Username: yaser\Yaser Bazhdar
+RunAs User: yaser\Yaser Bazhdar
+Machine: YASER (Microsoft Windows NT 6.3.9600.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6592
+**********************
+Transcript started, output file is .\results\final_figures\stage13_scientific_quality_audit.txt
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "`n=============================================="
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "1. ENVIRONMENTAL INTERPRETATION MAPS"
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "=============================================="
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> $envFolder = Join-Path $root "environmental_interpretation"
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem $envFolder -File |
+An empty pipe element is not allowed.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem $envFolder -File |
+ForEach-Object {
+    Write-Host "`nFILE:" $_.Name
+    Write-Host "SIZE KB:" ([math]::Round($_.Length / 1KB, 2))
+Missing closing '}' in statement block.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem $envFolder -File |
+ForEach-Object {
+    Write-Host "`nFILE:" $_.Name
+    Write-Host "SIZE KB:" ([math]::Round($_.Length / 1KB, 2))
+    try {
+        $img = [System.Drawing.Image]::FromFile($_.FullName)
+Missing closing '}' in statement block.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem $envFolder -File |
+ForEach-Object {
+    Write-Host "`nFILE:" $_.Name
+    Write-Host "SIZE KB:" ([math]::Round($_.Length / 1KB, 2))
+    try {
+        $img = [System.Drawing.Image]::FromFile($_.FullName)
+        Write-Host "WIDTH:" $img.Width
+        Write-Host "HEIGHT:" $img.Height
+        Write-Host "FORMAT:" $img.RawFormat
+Missing closing '}' in statement block.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem $envFolder -File |
+ForEach-Object {
+    Write-Host "`nFILE:" $_.Name
+    Write-Host "SIZE KB:" ([math]::Round($_.Length / 1KB, 2))
+    try {
+        $img = [System.Drawing.Image]::FromFile($_.FullName)
+        Write-Host "WIDTH:" $img.Width
+        Write-Host "HEIGHT:" $img.Height
+        Write-Host "FORMAT:" $img.RawFormat
+        $img.Dispose()
+    }
+    catch {
+        Write-Host "IMAGE ERROR:" $_.Exception.Message
+    }
+}
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "`n=============================================="
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "2. NDVI - LST RELATIONSHIP"
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "=============================================="
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> $relationshipFolder = Join-Path $root "statistical_relationships"
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem $relationshipFolder -File |
+An empty pipe element is not allowed.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem $relationshipFolder -File |
+ForEach-Object {
+    Write-Host "`nFILE:" $_.Name
+    Write-Host "SIZE KB:" ([math]::Round($_.Length / 1KB, 2))
+Missing closing '}' in statement block.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem $relationshipFolder -File |
+ForEach-Object {
+    Write-Host "`nFILE:" $_.Name
+    Write-Host "SIZE KB:" ([math]::Round($_.Length / 1KB, 2))
+    try {
+        $img = [System.Drawing.Image]::FromFile($_.FullName)
+        Write-Host "DIMENSIONS:" $img.Width "x" $img.Height
+        $img.Dispose()
+    }
+    catch {
+        Write-Host "IMAGE ERROR:" $_.Exception.Message
+    }
+}
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "`n=============================================="
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "3. REGRESSION MODEL OUTPUTS"
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "=============================================="
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> $regFolder = Join-Path $root "regression_models"
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem $regFolder -File |
+An empty pipe element is not allowed.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem $regFolder -File |
+ForEach-Object {
+Missing closing '}' in statement block.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem $regFolder -File |
+ForEach-Object {
+    Write-Host "`nFILE:" $_.Name
+    Write-Host "SIZE KB:" ([math]::Round($_.Length / 1KB, 2))
+Missing closing '}' in statement block.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem $regFolder -File |
+ForEach-Object {
+    Write-Host "`nFILE:" $_.Name
+    Write-Host "SIZE KB:" ([math]::Round($_.Length / 1KB, 2))
+    if ($_.Extension -eq ".csv") {
+        Write-Host "`nCSV CONTENT:"
+        Import-Csv $_.FullName | Format-List
+    }
+Missing closing '}' in statement block.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem $regFolder -File |
+ForEach-Object {
+    Write-Host "`nFILE:" $_.Name
+    Write-Host "SIZE KB:" ([math]::Round($_.Length / 1KB, 2))
+    if ($_.Extension -eq ".csv") {
+        Write-Host "`nCSV CONTENT:"
+        Import-Csv $_.FullName | Format-List
+    }
+    if ($_.Extension -eq ".png") {
+        try {
+            $img = [System.Drawing.Image]::FromFile($_.FullName)
+            Write-Host "DIMENSIONS:" $img.Width "x" $img.Height
+            $img.Dispose()
+        }
+        catch {
+            Write-Host "IMAGE ERROR:" $_.Exception.Message
+        }
+    }
+}
+
+
+Model             : OLS
+RMSE              : 3.83008885473992
+MAE               : 3.2491084047881684
+Residual_Morans_I : 0.6853123051964032
+
+Model             : GM_Lag
+RMSE              : 2.1357017210569937
+MAE               : 1.6845584244375051
+Residual_Morans_I : 0.0353680828894937
+
+Model             : GM_Error_Het
+RMSE              : 3.883724918961329
+MAE               : 3.285610592831388
+Residual_Morans_I : 0.7139054470340956
+
+
+
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "`n=============================================="
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "4. ALL FINAL SCIENTIFIC FIGURES"
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "=============================================="
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> $allFigures = Get-ChildItem $root -Recurse -File -Filter "*.png"
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "`nTOTAL PNG FIGURES:" $allFigures.Count
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> $figureReport = foreach ($file in $allFigures) {
+Missing closing '}' in statement block.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> $figureReport = foreach ($file in $allFigures) {
+Missing closing '}' in statement block.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> $figureReport = foreach ($file in $allFigures) {
+    $width = 0
+    $height = 0
+    $valid = $false
+Missing closing '}' in statement block.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> $figureReport = foreach ($file in $allFigures) {
+    $width = 0
+    $height = 0
+    $valid = $false
+    try {
+        $img = [System.Drawing.Image]::FromFile($file.FullName)
+        $width = $img.Width
+        $height = $img.Height
+        $valid = $true
+        $img.Dispose()
+    }
+    catch {
+        $valid = $false
+    }
+Missing closing '}' in statement block.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> $figureReport = foreach ($file in $allFigures) {
+    $width = 0
+    $height = 0
+    $valid = $false
+    try {
+        $img = [System.Drawing.Image]::FromFile($file.FullName)
+        $width = $img.Width
+        $height = $img.Height
+        $valid = $true
+        $img.Dispose()
+    }
+    catch {
+        $valid = $false
+    }
+    [PSCustomObject]@{
+        File = $file.Name
+        Folder = $file.Directory.Name
+        Width = $width
+        Height = $height
+        Size_KB = [math]::Round($file.Length / 1KB, 2)
+        Valid = $valid
+        Path = $file.FullName
+    }
+}
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> $figureReport |
+An empty pipe element is not allowed.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> $figureReport |
+Format-Table File, Folder, Width, Height, Size_KB, Valid -AutoSize
+
+File                                       Folder                       Width Height Size_KB Valid
+----                                       ------                       ----- ------ ------- -----
+LST_C_spatial_distribution.png             environmental_interpretation     0      0 1260.83 False
+NDBI_spatial_distribution.png              environmental_interpretation     0      0 1158.24 False
+NDVI_spatial_distribution.png              environmental_interpretation     0      0 1053.98 False
+LISA_LST_C_BH_updated.png                  lisa_clusters                    0      0  939.21 False
+LISA_NDBI_BH_updated.png                   lisa_clusters                    0      0  754.48 False
+LISA_NDVI_BH_updated.png                   lisa_clusters                    0      0  761.03 False
+final_spatial_regression_comparison.png    regression_models                0      0  160.83 False
+model3_residual_diagnostics.png            regression_models                0      0 1166.12 False
+LISA_BH_LST_C_K10.png                      maps                             0      0 1049.19 False
+LISA_BH_LST_C_K6.png                       maps                             0      0  958.55 False
+LISA_BH_LST_C_K8.png                       maps                             0      0 1000.26 False
+LISA_BH_NDBI_K10.png                       maps                             0      0  846.85 False
+LISA_BH_NDBI_K6.png                        maps                             0      0  792.25 False
+LISA_BH_NDBI_K8.png                        maps                             0      0  816.62 False
+LISA_BH_NDVI_K10.png                       maps                             0      0  873.12 False
+LISA_BH_NDVI_K6.png                        maps                             0      0  781.52 False
+LISA_BH_NDVI_K8.png                        maps                             0      0  827.36 False
+LISA_Stability_LST_C.png                   maps                             0      0 1103.77 False
+LISA_Stability_NDBI.png                    maps                             0      0  931.44 False
+LISA_Stability_NDVI.png                    maps                             0      0  951.75 False
+NDVI_NDBI_LST_regression_relationships.png statistical_relationships        0      0 1280.64 False
+
+
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> $figureReport |
+An empty pipe element is not allowed.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> $figureReport |
+Export-Csv ".\results\final_figures\stage13_figure_quality_inventory.csv" `
+-NoTypeInformation -Encoding UTF8
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "`n=============================================="
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "5. SEARCHING EXISTING NDVI-LST DATA"
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "=============================================="
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem ".\results" -Recurse -File -Filter "*.csv" |
+An empty pipe element is not allowed.
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Get-ChildItem ".\results" -Recurse -File -Filter "*.csv" |
+Where-Object {
+    $_.Name -match "NDVI|LST|regression|relationship|correlation"
+} |
+Select-Object Name, DirectoryName,
+@{Name="Size_KB";Expression={[math]::Round($_.Length / 1KB, 2)}} |
+Format-Table -AutoSize
+
+Name                                  DirectoryName
+----                                  -------------
+pearson_correlation.csv               E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Ur...
+spearman_correlation.csv              E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Ur...
+regression_coefficients.csv           E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Ur...
+regression_descriptive_statistics.csv E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Ur...
+regression_diagnostics.csv            E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Ur...
+regression_model_metrics.csv          E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Ur...
+residual_spatial_autocorrelation.csv  E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Ur...
+spatial_regression_model_metrics.csv  E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Ur...
+spatial_regression_residual_moran.csv E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Ur...
+
+
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "`n=============================================="
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "6. FINAL SUMMARY"
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "=============================================="
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "Total PNG:" $allFigures.Count
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "Valid PNG:" (($figureReport | Where-Object Valid).Count)
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "Invalid PNG:" (($figureReport | Where-Object { !$_.Valid }).Count)
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Write-Host "`nQUALITY CONTROL AUDIT FINISHED."
+
+PS E:\European universities\apply files\List of Apply\design portfolio\project\Tehran_Urban_Climate_Analysis> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261112154016
+**********************

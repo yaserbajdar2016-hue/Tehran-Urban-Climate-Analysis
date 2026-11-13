@@ -1,0 +1,7 @@
+﻿Analysis_Type,Indicator_or_Model,Moran_I,P_Value
+Global_Morans_I,NDVI,0.2823078389333259,0.001
+Global_Morans_I,NDBI,0.2549738544022197,0.001
+Global_Morans_I,LST_C,0.7160044262426237,0.001
+Residual_Morans_I,OLS,0.6853123051964032,0.001
+Residual_Morans_I,GM_Lag,0.0353680828894937,0.001
+Residual_Morans_I,GM_Error_Het,0.7139054470340956,0.001

@@ -1,0 +1,11 @@
+Category,Filename,Size_KB
+relationships,NDVI_NDBI_LST_regression_relationships.png,1280.64
+lisa,LISA_LST_C_BH_updated.png,939.21
+lisa,LISA_NDBI_BH_updated.png,754.48
+lisa,LISA_NDVI_BH_updated.png,761.03
+regression,final_model_comparison.csv,0.22
+regression,final_spatial_regression_comparison.png,160.83
+regression,model3_residual_diagnostics.png,1166.12
+environment,LST_C_spatial_distribution.png,1260.83
+environment,NDBI_spatial_distribution.png,1158.24
+environment,NDVI_spatial_distribution.png,1053.98

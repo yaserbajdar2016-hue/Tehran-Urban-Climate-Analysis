@@ -1,0 +1,24 @@
+TEHRAN URBAN CLIMATE ANALYSIS
+STAGE 13 - FINAL MAPS AND FIGURES
+============================================================
+
+Study area: Tehran, Iran
+Study year: 2024
+Project owner: Yaser Bazhdar
+
+Final output categories:
+- environmental_interpretation: 3 files
+- lisa_clusters: 3 files
+- regression_models: 3 files
+- sensitivity_analysis: 18 files
+- spatial_autocorrelation: 3 files
+- statistical_relationships: 1 files
+
+Total files inventoried: 34
+
+Stage 13 supplementary spatial figures:
+- Global Moran's I comparison
+- Regression residual Moran's I comparison
+- Spatial autocorrelation summary CSV
+
+Original Stage 1-12 data and scripts were not modified.
