@@ -1,0 +1,46 @@
+﻿Variable,Method,Cluster,Count,Percentage
+NDVI,Raw,High-High,464,9.28
+NDVI,Raw,Low-Low,883,17.66
+NDVI,Raw,High-Low,105,2.1
+NDVI,Raw,Low-High,181,3.62
+NDVI,Raw,Not Significant,3367,67.34
+NDVI,BH,High-High,182,3.64
+NDVI,BH,Low-Low,296,5.92
+NDVI,BH,High-Low,13,0.26
+NDVI,BH,Low-High,54,1.08
+NDVI,BH,Not Significant,4455,89.1
+NDVI,BY,High-High,0,0.0
+NDVI,BY,Low-Low,0,0.0
+NDVI,BY,High-Low,0,0.0
+NDVI,BY,Low-High,0,0.0
+NDVI,BY,Not Significant,5000,100.0
+NDBI,Raw,High-High,733,14.66
+NDBI,Raw,Low-Low,432,8.64
+NDBI,Raw,High-Low,186,3.7199999999999998
+NDBI,Raw,Low-High,99,1.9800000000000002
+NDBI,Raw,Not Significant,3550,71.0
+NDBI,BH,High-High,265,5.3
+NDBI,BH,Low-Low,172,3.44
+NDBI,BH,High-Low,59,1.18
+NDBI,BH,Low-High,18,0.36
+NDBI,BH,Not Significant,4486,89.72
+NDBI,BY,High-High,0,0.0
+NDBI,BY,Low-Low,0,0.0
+NDBI,BY,High-Low,0,0.0
+NDBI,BY,Low-High,0,0.0
+NDBI,BY,Not Significant,5000,100.0
+LST_C,Raw,High-High,1242,24.84
+LST_C,Raw,Low-Low,1364,27.279999999999998
+LST_C,Raw,High-Low,66,1.32
+LST_C,Raw,Low-High,74,1.48
+LST_C,Raw,Not Significant,2254,45.08
+LST_C,BH,High-High,1066,21.32
+LST_C,BH,Low-Low,926,18.52
+LST_C,BH,High-Low,31,0.62
+LST_C,BH,Low-High,41,0.8200000000000001
+LST_C,BH,Not Significant,2936,58.720000000000006
+LST_C,BY,High-High,0,0.0
+LST_C,BY,Low-Low,0,0.0
+LST_C,BY,High-Low,0,0.0
+LST_C,BY,Low-High,0,0.0
+LST_C,BY,Not Significant,5000,100.0

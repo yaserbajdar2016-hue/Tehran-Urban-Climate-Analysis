@@ -1,0 +1,64 @@
+TEHRAN URBAN CLIMATE ANALYSIS
+UPDATED SPATIAL AUTOCORRELATION RESULTS
+=================================================================
+
+Samples: 5000
+Study year: 2024
+Spatial weights: KNN (8)
+Coordinate system: EPSG:32639
+Permutations: 999
+Random seed: 42
+Significance level: 0.05
+
+FDR correction: Benjamini-Hochberg (BH)
+Sensitivity correction: Benjamini-Yekutieli (BY)
+Correction applied separately to each variable.
+
+GLOBAL MORAN'S I RESULTS
+-----------------------------------------------------------------
+Variable  Samples  Moran_I  Expected_I    Z_Score  P_Value  Significance_Level  Permutations  Random_Seed  K_Neighbors                      Interpretation
+    NDVI     5000 0.282308     -0.0002  43.061394    0.001                0.05           999           42            8 Significant spatial autocorrelation
+    NDBI     5000 0.254974     -0.0002  37.826494    0.001                0.05           999           42            8 Significant spatial autocorrelation
+   LST_C     5000 0.716004     -0.0002 107.387933    0.001                0.05           999           42            8 Significant spatial autocorrelation
+
+LISA CLUSTER COUNT COMPARISON
+-----------------------------------------------------------------
+
+NDVI
+Method             BH    BY   Raw
+Cluster                          
+High-High         182     0   464
+High-Low           13     0   105
+Low-High           54     0   181
+Low-Low           296     0   883
+Not Significant  4455  5000  3367
+
+NDBI
+Method             BH    BY   Raw
+Cluster                          
+High-High         265     0   733
+High-Low           59     0   186
+Low-High           18     0    99
+Low-Low           172     0   432
+Not Significant  4486  5000  3550
+
+LST_C
+Method             BH    BY   Raw
+Cluster                          
+High-High        1066     0  1242
+High-Low           31     0    66
+Low-High           41     0    74
+Low-Low           926     0  1364
+Not Significant  2936  5000  2254
+
+
+METHODOLOGICAL NOTES
+-----------------------------------------------------------------
+1. Global Moran's I uses 999 permutation tests.
+2. Local Moran's I uses 999 permutation tests.
+3. A fixed random seed is used for reproducibility.
+4. BH and BY corrections are applied separately to each variable's local tests.
+5. Raw p-values are retained for comparison.
+6. Permutation p-values have finite resolution. With 999 permutations, the minimum attainable pseudo p-value is approximately 0.001.
+7. Results depend on the KNN spatial weights and the spatial sampling design.
+8. Statistical significance does not establish causality.
