@@ -1,0 +1,12 @@
+﻿# Python 3.13.14
+# Dependencies identified from the 11 project scripts
+esda==2.10.0
+libpysal==4.15.1
+matplotlib==3.11.0
+numpy==2.5.0
+pandas==3.0.3
+pyproj==3.8.0
+scipy==1.18.0
+scikit-learn==1.9.0
+spreg==1.9.2
+statsmodels==0.15.0
