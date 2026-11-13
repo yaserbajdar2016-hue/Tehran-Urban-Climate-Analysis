@@ -1,0 +1,2 @@
+Variable,K_Neighbors,Permutations,Moran_I,Expected_I,P_Value,Status
+Model_3_Residuals,8,999,0.6853123051964032,-0.00020004000800160032,0.001,Calculated successfully

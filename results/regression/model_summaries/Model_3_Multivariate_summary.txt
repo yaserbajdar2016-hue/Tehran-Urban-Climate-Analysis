@@ -1,0 +1,57 @@
+CONVENTIONAL OLS RESULTS
+============================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  LST_C   R-squared:                       0.098
+Model:                            OLS   Adj. R-squared:                  0.097
+Method:                 Least Squares   F-statistic:                     270.7
+Date:                Wed, 11 Nov 2026   Prob (F-statistic):          2.31e-112
+Time:                        20:23:41   Log-Likelihood:                -13809.
+No. Observations:                5000   AIC:                         2.762e+04
+Df Residuals:                    4997   BIC:                         2.764e+04
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         43.4062      0.228    190.231      0.000      42.959      43.853
+NDVI           5.1734      1.093      4.735      0.000       3.031       7.315
+NDBI          24.0776      1.684     14.299      0.000      20.777      27.379
+==============================================================================
+Omnibus:                      351.767   Durbin-Watson:                   1.979
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              154.147
+Skew:                           0.222   Prob(JB):                     3.37e-34
+Kurtosis:                       2.264   Cond. No.                         37.0
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+HC3 ROBUST INFERENCE
+============================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  LST_C   R-squared:                       0.098
+Model:                            OLS   Adj. R-squared:                  0.097
+Method:                 Least Squares   F-statistic:                     302.9
+Date:                Wed, 11 Nov 2026   Prob (F-statistic):          6.93e-125
+Time:                        20:23:41   Log-Likelihood:                -13809.
+No. Observations:                5000   AIC:                         2.762e+04
+Df Residuals:                    4997   BIC:                         2.764e+04
+Df Model:                           2                                         
+Covariance Type:                  HC3                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         43.4062      0.305    142.220      0.000      42.808      44.004
+NDVI           5.1734      1.449      3.571      0.000       2.333       8.014
+NDBI          24.0776      2.236     10.767      0.000      19.693      28.462
+==============================================================================
+Omnibus:                      351.767   Durbin-Watson:                   1.979
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              154.147
+Skew:                           0.222   Prob(JB):                     3.37e-34
+Kurtosis:                       2.264   Cond. No.                         37.0
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
